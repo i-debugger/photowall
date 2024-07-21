@@ -1,17 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDOM from 'react-dom';
+import Main from './Components/Main';
+import './styles/stytlesheet.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// const tasks = ['Buy milk', 'Buy eggs', 'Buy bread'];
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// const element = 
+// <div>
+//   <h1>My Tasks</h1>
+//   <ol> 
+//     {tasks.map((task, index) => 
+//       <li key={index}>{task}</li>)}
+//   </ol>
+// </div>
+  
+// const element = React.createElement('ol', null,
+//   tasks.map((task, index) => React.createElement('li', {key: index}, task))
+// );
+
+ReactDOM.render(<Main/>, document.getElementById('root'));
